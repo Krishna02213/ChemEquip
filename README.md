@@ -48,17 +48,27 @@ Node.js 18 or newer
 
 A Gemini API key from Google AI Studio
 
-Setup Overview
+Setup
 
-Clone the repository
+Clone the repository and install dependencies:
 
-Install dependencies
+```sh
+git clone https://github.com/Krishna02213/ChemEquip.git
+cd ChemEquip
+npm install
+```
 
-Add your Gemini API key to the environment
+Create a `.env.local` file in the project root and add your Gemini API key:
 
-Start the development server
+```env
+VITE_GEMINI_API_KEY=your_gemini_api_key
+```
 
-Open the app in your browser
+Start the development server and open the local URL shown in the terminal:
+
+```sh
+npm run dev
+```
 
 📁 Project Structure
 
@@ -134,13 +144,9 @@ Clear browser cache
 
 📝 Scripts
 
-Development server
-
-Production build
-
-Preview build
-
-(See package.json for details.)
+- `npm run dev` — start the development server
+- `npm run build` — create a production build
+- `npm run preview` — preview the production build locally
 
 🔒 Security Notes
 
@@ -182,11 +188,3 @@ Questions or ideas?
 Open an issue on GitHub.
 
 Happy analyzing! 🧪📈
-
-If you want, I can also:
-
-Strip it down even more for a student project
-
-Add screenshots / GIF placeholders
-
-Rewrite it as a portfolio README
